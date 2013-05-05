@@ -1,0 +1,42 @@
+
+public class Dice 
+{
+   public static int count (int count)
+	 {
+		 return count;
+	 }
+
+	
+	 public  static int RollDice(int n, int max)
+	{
+		int number=0;
+		
+		for (int i=1;i<=n;i++)
+		{
+			number= number + (1 + (int)(Math.random()*max));
+			i++;
+
+		}
+
+		return number;
+	}
+	
+	 public static int Roll_1_Dice()
+	{
+		int number;
+		number= 1 + (int)(Math.random()*6);
+		return number;
+	}
+	
+	public static int RollCount(int n, int max)
+	{
+		int number=0;
+		
+		for (int i=1;i<=n;i++)
+		{
+			number= number + (1 + (int)(Math.random()*max));
+			i++;
+		}
+		return number;
+	}
+}
